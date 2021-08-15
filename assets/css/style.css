@@ -11,6 +11,7 @@ body {
     font-family: "Lobster", sans-serif;
     min-height: 100vh;
     padding: 30px 30px;
+    margin: 50px 0;
 }
 
 .container {
@@ -22,6 +23,7 @@ body {
     border-radius: 25px;
 
 
+
 }
 
 header {
@@ -29,7 +31,8 @@ header {
     justify-content: space-between;
     padding: 20px;
     color: aliceblue;
-     
+
+
 }
 
 h1 {
@@ -38,16 +41,17 @@ h1 {
     flex-direction: column;
     margin: 0;
     text-transform: uppercase;
-    
+
 
 }
-h4{
-    color:#1c1c1c;
+
+h4 {
+    color: #1c1c1c;
     margin: 0;
     text-transform: uppercase;
 }
 
-.score-container  {
+.score-container {
     background-color: #3f691d;
     height: 100px;
     border: 1px solid #1c1c1c;
@@ -55,93 +59,136 @@ h4{
     font-size: 1.3rem;
     border-radius: 10px;
     padding: 20px 10px;
-    
-    
+    margin: 30px 0;
+
+
 }
-.score-container p{
+
+.score-container p {
     text-align: center;
     margin: 5px;
 }
- .main{
-     margin: 0;
-     text-align: center;
-     padding: 10px 10px;
- }
- 
- #gamerock{
-     font-size: 5rem;
-     color: brown;
-     background-color: #1c1c1c;
-     border-radius: 25px;
-     border: 5px solid #3f691d;
-     cursor: pointer;
- }
 
- #gamepaper{
-     font-size: 5rem;
-     color: rgb(191, 202, 37);
-     background-color: #1c1c1c;
-     border-radius: 25px;
-     border: 5px solid #3f691d;
-     cursor: pointer;
- }
+.main {
 
- #gamescissors{
-     font-size: 5rem;
-     color: rgb(231, 219, 219);
-     background-color: #1c1c1c;
-     border-radius: 25px;
-     border: 5px solid #3f691d;
-     cursor: pointer;
- }
+    width: 350px;
+    height: 400px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
 
- #gamelizard{
-     font-size: 5rem;
-     color: rgb(52, 184, 19);
-     background-color: #1c1c1c;
-     border-radius: 25px;
-     border: 5px solid #3f691d;
-     cursor: pointer;
- }
 
- #gamespock{
-     font-size: 5rem;
-     color: rgb(230, 6, 6);
-     background-color: #1c1c1c;
-     border-radius: 25px;
-     border: 5px solid #3f691d;
-     cursor: pointer;
- }
- .main #gamerock:hover{
-     background-color: aliceblue;
- }
- .main #gamepaper:hover{
-     background-color: aliceblue;
- }
- .main #gamescissors:hover{
-     background-color: aliceblue;
- }
- .main #gamelizard:hover{
-     background-color: aliceblue;
- }
- .main #gamespock:hover{
-     background-color: aliceblue;
- }
+}
 
-     
-.rules{
+
+#gamerock {
+    font-size: 5rem;
+    color: brown;
+    background-color: #1c1c1c;
+    border-radius: 45%;
+    border: 5px solid #1c1c1c;
+    cursor: pointer;
+    position: absolute;
+    right: 800px;
+    top: 580px;
+}
+
+#gamepaper {
+    font-size: 5rem;
+    color: rgb(191, 202, 37);
+    background-color: #1c1c1c;
+    border-radius: 45%;
+    border: 5px solid #1c1c1c;
+    cursor: pointer;
+    position: absolute;
+    right: 750px;
+    top: 400px;
+}
+
+#gamescissors {
+    font-size: 5rem;
+    color: rgb(224, 165, 55);
+    background-color: #1c1c1c;
+    border-radius: 45%;
+    border: 5px solid #1c1c1c;
+    cursor: pointer;
+    position: absolute;
+    right: 900px;
+    top: 290px;
+}
+
+#gamelizard {
+    font-size: 5rem;
+    color: rgb(52, 184, 19);
+    background-color: #1c1c1c;
+    border-radius: 45%;
+    border: 5px solid #1c1c1c;
+    cursor: pointer;
+    position: absolute;
+    left: 800px;
+    top: 580px;
+}
+
+
+#gamespock {
+    font-size: 5rem;
+    color: rgb(230, 6, 6);
+    background-color: #1c1c1c;
+    border-radius: 45%;
+    border: 5px solid #1c1c1c;
+    cursor: pointer;
+    position: absolute;
+    left: 740px;
+    top: 400px;
+}
+
+.main #gamerock:hover {
+    background-color: aliceblue;
+}
+
+.main #gamepaper:hover {
+    background-color: aliceblue;
+}
+
+.main #gamescissors:hover {
+    background-color: aliceblue;
+}
+
+.main #gamelizard:hover {
+    background-color: aliceblue;
+}
+
+.main #gamespock:hover {
+    background-color: aliceblue;
+}
+
+.main i {
+
+    font-weight: 300;
+
+}
+
+
+
+.rules {
     font-size: 1.2rem;
-    background-color:#1c1c1cf3;
-    font-family: "Lobster",sans-serif;
+    background-color: #1c1c1cf3;
+    font-family: "Lobster", sans-serif;
     text-transform: uppercase;
     margin: 0 auto;
     border: 2px solid #1c1c1c;
     border-radius: 10px;
-    color:white;
+    color: white;
     padding: 10px 25px;
     letter-spacing: 3px;
     position: fixed;
     bottom: 30px;
     right: 30px;
+    cursor: pointer;
 }
 
+.rules:hover {
+    background-color: #3f691d;
+}
