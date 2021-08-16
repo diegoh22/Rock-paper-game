@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
     background: radial-gradient(ellipse at top, #1c1c1c, transparent),
         radial-gradient(ellipse at bottom, #3f691d, transparent);
     ;
-    font-family: "Lobster", sans-serif;
+    font-family: "Fjalla-one", sans-serif;
     min-height: 100vh;
     padding: 30px 30px;
     margin: 50px 0;
@@ -41,8 +41,6 @@ h1 {
     flex-direction: column;
     margin: 0;
     text-transform: uppercase;
-
-
 }
 
 h4 {
@@ -61,116 +59,85 @@ h4 {
     padding: 20px 10px;
     margin: 30px 0;
 
-
 }
 
-.score-container p {
+.score-container .score {
     text-align: center;
     margin: 5px;
 }
 
-.main {
 
-    width: 350px;
-    height: 400px;
+.game-choice {
+ font-size: 4rem;
+    font-weight: 300;
+    display: inline-flex;
     align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 0 auto;
-
-
+    justify-content: center; 
+    width: 120px;
+    height: 120px;
+    padding: 20px 0 20px;
 }
 
-
-#gamerock {
+.game-choice.rock {
     font-size: 5rem;
     color: brown;
-    background-color: #1c1c1c;
-    border-radius: 45%;
-    border: 5px solid #1c1c1c;
     cursor: pointer;
     position: absolute;
-    right: 800px;
+    right:800px;
     top: 580px;
+     background-color: #1c1c1c;
+    border: 5px solid #1c1c1c;
+    border-radius: 50%;
+    
 }
 
-#gamepaper {
+.game-choice.paper {
     font-size: 5rem;
     color: rgb(191, 202, 37);
-    background-color: #1c1c1c;
-    border-radius: 45%;
-    border: 5px solid #1c1c1c;
     cursor: pointer;
     position: absolute;
     right: 750px;
     top: 400px;
+     background-color: #1c1c1c;
+    border: 5px solid #1c1c1c;
+    border-radius: 50%;
 }
 
-#gamescissors {
+.game-choice.scissors {
     font-size: 5rem;
     color: rgb(224, 165, 55);
-    background-color: #1c1c1c;
-    border-radius: 45%;
-    border: 5px solid #1c1c1c;
     cursor: pointer;
     position: absolute;
     right: 900px;
     top: 290px;
+     background-color: #1c1c1c;
+    border: 5px solid #1c1c1c;
+    border-radius: 50%;
 }
 
-#gamelizard {
+.game-choice.lizard {
     font-size: 5rem;
     color: rgb(52, 184, 19);
-    background-color: #1c1c1c;
-    border-radius: 45%;
-    border: 5px solid #1c1c1c;
     cursor: pointer;
     position: absolute;
     left: 800px;
     top: 580px;
+     background-color: #1c1c1c;
+    border: 5px solid #1c1c1c;
+    border-radius: 50%;
 }
 
-
-#gamespock {
+.game-choice.spock {
     font-size: 5rem;
     color: rgb(230, 6, 6);
-    background-color: #1c1c1c;
-    border-radius: 45%;
-    border: 5px solid #1c1c1c;
     cursor: pointer;
     position: absolute;
     left: 740px;
     top: 400px;
+     background-color: #1c1c1c;
+    border: 5px solid #1c1c1c;
+    border-radius: 50%;
 }
-
-.main #gamerock:hover {
-    background-color: aliceblue;
-}
-
-.main #gamepaper:hover {
-    background-color: aliceblue;
-}
-
-.main #gamescissors:hover {
-    background-color: aliceblue;
-}
-
-.main #gamelizard:hover {
-    background-color: aliceblue;
-}
-
-.main #gamespock:hover {
-    background-color: aliceblue;
-}
-
-.main i {
-
-    font-weight: 300;
-
-}
-
-
 
 .rules {
     font-size: 1.2rem;
