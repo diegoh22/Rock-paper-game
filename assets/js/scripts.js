@@ -1,3 +1,5 @@
+const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+
 
 
 window.addEventListener('load', () => {
@@ -18,3 +20,6 @@ userChoice = ev.target.dataset.choice
 })
 
 
+function pickRandomChoice() {
+    return choices[Math.floor(Math.random() * choices.length)];
+}
